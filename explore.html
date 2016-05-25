@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Explore</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./vendor/uikit/css/uikit.min.css">
+		<link rel="stylesheet" type="text/css" href="./vendor/uikit/css/uikit.custom.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<div class="uk-offcanvas" id="navMenu">
+			<div class="uk-offcanvas-bar">
+				<ul class="uk-nav uk-nav-offcanvas">
+					<form class="uk-search"><input class="uk-search-field" type="search" placeholder="Search"></form>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; All Events</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; All Clubs</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; Settings</a></li>
+
+					<div style="bottom:0;position:absolute;width:100%">
+						<p style="text-align:center; color:white">&copy 2016 MyUpass</p>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div class="uk-offcanvas" id="userMenu">
+			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+				<ul class="uk-nav uk-nav-offcanvas" >
+					<li class="uk-nav-header">About me</li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-qrcode"></i>&nbsp; My QR</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; My Upcoming Events</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; My Clubs</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-user"></i>&nbsp; Account</a></li>
+
+					<li class="uk-nav-header">Manage my clubs</li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; FMAA</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; AIESEC</a></li>
+
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-sign-out"></i>&nbsp; Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<header class="uk-navbar uk-text-contrast" style="border-radius: initial;" data-uk-sticky>
+			<ul class="uk-navbar-nav">
+				<li><a onclick="UIkit.offcanvas.show('#navMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-navicon"></i></a></li>
+			</ul>
+			<div class="uk-navbar-flip">
+				<ul class="uk-navbar-nav">
+					<li><a onclick="UIkit.offcanvas.show('#userMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-user"></i></a></li>
+				</ul>
+			</div>
+			<div class="uk-navbar-content uk-navbar-center uk-text-bold">
+				MyUpass
+			</div>
+		</header>
+		<div class="explore uk-container-center">
+			<div class="uk-grid uk-grid-large uk-flex-left">
+				<div class="uk-width-medium-1-2 ">
+					<div class="uk-panel uk-panel-box">
+						<h3 class="uk-panel-title" >Recent Clubs</h3>
+						<ul class="uk-list uk-list-striped clubfeed">
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_dp.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>FMAA</strong></a>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+									
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_dp.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>FMAA</strong></a>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+									
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_dp.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>FMAA</strong></a>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+									
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_dp.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>FMAA</strong></a>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+									
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_dp.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>FMAA</strong></a>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+									
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_dp.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>FMAA</strong></a>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+									
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_dp.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>FMAA</strong></a>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+									
+								</div>
+							</li>
+							<li class="loader">
+								<a href="#" class="load-more load-more--loading">Load more</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="uk-width-medium-1-2 uk-flex-right">
+					<div class="uk-panel uk-panel-box">
+						<h3 class="uk-panel-title">Recent Events</h3>
+						<ul class="uk-list uk-list-striped eventfeed">
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_cover.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#">FMAA </a>
+										</div>
+										<div class="detail">
+											<div style="display:inline">
+												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
+												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+											</div>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_cover.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#">FMAA </a>
+										</div>
+										<div class="detail">
+											<div style="display:inline">
+												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
+												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+											</div>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_cover.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#">FMAA </a>
+										</div>
+										<div class="detail">
+											<div style="display:inline">
+												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
+												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+											</div>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_cover.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#">FMAA </a>
+										</div>
+										<div class="detail">
+											<div style="display:inline">
+												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
+												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+											</div>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_cover.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#">FMAA </a>
+										</div>
+										<div class="detail">
+											<div style="display:inline">
+												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
+												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+											</div>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li>
+								<div class="feed">
+									<div class="profile">
+										<img src="./images/sample_cover.jpg">
+										<p class="timestamp">3 mins ago</p>
+									</div>
+									<div class="content">
+										<div class="title">
+											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#">FMAA </a>
+										</div>
+										<div class="detail">
+											<div style="display:inline">
+												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
+												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+											</div>
+										</div>
+										<div class="brief">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							
+							<li class="loader">
+								<a href="#" class="load-more load-more--loading">Load more</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="./vendor/uikit/js/uikit.min.js"></script>
+	</body>
+</html>

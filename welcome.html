@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="welcome">
+	<head>
+		<title>Welcome To MyUpass</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./vendor/uikit/css/uikit.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<div class="uk-grid" id="welcome" style="margin-top:20px">
+			<div class="uk-container-center" style="text-align:center;color: white;text-decoration: none;
+  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);">
+				<h1 style="color:white">Welcome to MyUpass!</h1>
+				<h3 style="color:white">Your digitalised passbook to all your clubs!</h3>
+			</div>
+			<div class="uk-width-large-1-1" style="padding-top:0">
+				<div class="form">
+					<div class="form-toggle"></div>
+					<div class="form-panel one">
+						<div class="form-header">
+							<h1>Login to your pass!</h1>
+						</div>
+						<div class="form-content">
+							<form>
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="email" id="email" name="email" required="required"/>
+								</div>
+								<div class="form-group">
+									<label for="password">Password</label>
+									<input type="password" id="password" name="password" required="required"/>
+								</div>
+								<div class="form-group">
+									<label class="form-remember">
+										<input type="checkbox"/>Remember Me
+										</label><a href="#" class="form-recovery">Forgot Password?</a>
+									</div>
+									<div class="form-group">
+										<button type="submit">Log In</button>
+									</div>
+								</form>
+								<div class="form-group connect-facebook">
+									<button type="submit"><i class="fa fa-facebook" aria-hidden="true"></i> Connect with Facebook </button>
+								</div>
+							</div>
+						</div>
+						<div class="form-panel two">
+							<div class="form-header">
+								<h1>Register Your Pass!</h1>
+							</div>
+							<div class="form-content">
+								<form>
+									<div class="form-group">
+										<label for="email">Email Address</label>
+										<input type="email" id="email" name="email" required="required"/>
+									</div>
+									<div class="form-group">
+										<label for="password">Password</label>
+										<input type="password" id="password" name="password" required="required"/>
+									</div>
+									<div class="form-group">
+										<label for="cpassword">Confirm Password</label>
+										<input type="password" id="cpassword" name="cpassword" required="required"/>
+									</div>
+									
+									<div class="form-group">
+										<button type="submit">Register</button>
+									</div>
+									
+								</form>
+								<div class="form-group connect-facebook">
+									<button type="submit"><i class="fa fa-facebook" aria-hidden="true"></i> Connect with Facebook </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="pen-footer">
+				<a href="#">&copy; 2016 MyUpass</a>|
+				<a href="#">Explore</a>|
+				<a href="#">Careers</a>|
+				<a href="#">Apps</a>
+			</div>
+
+			<script type="text/javascript" src="vendor/uikit/js/uikit.min.js"></script>
+			<script type="text/javascript" src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+			<script type="text/javascript" src="js/welcome.js"></script>
+
+			<script id="__bs_script__">//<![CDATA[document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.12.8.js'><\/script>".replace("HOST", location.hostname));//]]></script>
+		</body>
+	</html>

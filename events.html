@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+	<head>
+		<title>MyUpass</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./vendor/uikit/css/uikit.min.css">
+		<link rel="stylesheet" type="text/css" href="./vendor/uikit/css/uikit.custom.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body style="height: 100%;">
+		<div class="uk-offcanvas" id="navMenu">
+			<div class="uk-offcanvas-bar">
+				<ul class="uk-nav uk-nav-offcanvas">
+					<form class="uk-search"><input class="uk-search-field" id="search-nav" type="search" placeholder="Search"></form>
+
+					<!-- DEMO SEARCH DATA-->
+					<ul class="uk-list-line dropdown-menu" id="dropdown-nav">
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Clubs</h3>
+							<li><a href="#">THIS LIST WILL SHOW CLUBS!</a></li>
+							<li><a href="#">FMAA</a></li>
+							<li><a href="#">Whatever the shit is</a></li>
+							<li><a href="#">What a hell </a></li>
+							<li><a href="#">This is just great</a></li>
+							<li><a href="#">No worries</a></li>
+						</div>
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Events</h3>
+							<li><a href="#">THIS LIST WILL SHOW EVENTS!</a></li>
+							<li><a href="#">FMAA Networking Night</a></li>
+							<li><a href="#">Whatever the shit is</a></li>
+							<li><a href="#">What a hell </a></li>
+							<li><a href="#">This is just great</a></li>
+							<li><a href="#">No worries</a></li>
+						</div>
+					</ul>
+
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; All Events</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; All Clubs</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; Settings</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="uk-offcanvas" id="userMenu">
+			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+				<ul class="uk-nav uk-nav-offcanvas">
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-qrcode"></i>&nbsp; My QR</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; My Upcoming Events</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; My Clubs</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-user"></i>&nbsp; Account</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-sign-out"></i>&nbsp; Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<header class="uk-navbar uk-text-contrast" style="border-radius: initial;" data-uk-sticky>
+			<ul class="uk-navbar-nav">
+				<li><a onclick="UIkit.offcanvas.show('#navMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-navicon"></i></a></li>
+			</ul>
+			<div class="uk-navbar-flip">
+				<ul class="uk-navbar-nav">
+					<li><a onclick="UIkit.offcanvas.show('#userMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-user"></i></a></li>
+				</ul>
+			</div>
+			<div class="uk-navbar-content uk-navbar-center uk-text-bold">
+				MyUpass
+			</div>
+		</header>
+		<div class="uk-flex">
+			<div class="uk-block uk-block-muted uk-width-1-5 uk-padding-remove" >
+				<div class="index" style="text-align:center;padding:10px">
+					<a href="#">Today</a> | <a href="#">Next week</a> | <a href="#">Next month</a>
+				</div>
+				<div class="search">
+					<form action="" class="Search">
+						<input class="Search-box" type="search" id="Search-box" autocomplete="off" placeholder="Search all events">
+					</form>
+					<!-- DEMO SEARCH DATA-->
+					<ul class="uk-list-line dropdown-menu" id="dropdown-search">
+						<li><a href="#">THIS LIST WILL BE LIVELY UPDATED!</a></li>
+						<li><a href="#">FMAA</a></li>
+						<li><a href="#">Whatever the shit is</a></li>
+						<li><a href="#">What a hell </a></li>
+						<li><a href="#">This is just great</a></li>
+						<li><a href="#">No worries</a></li>
+					</ul>
+				</div>
+				<ul id="club-list-line" class="uk-nav uk-nav-side uk-nav-parent-icon" style="z-index:20;height:100vh;overflow:auto" data-uk-nav="{multiple:true}" data-uk-sticky="{top:50}">
+					<ul class="uk-nav uk-list uk-list-line" >
+						<li class="club-list-item active">
+							<div class="club-thumb">
+								<div class="profile-image">
+									<img src="./images/sample_dp.jpg">
+								</div>
+							</div>
+							<div class="title">
+								<h3>
+								<a href="#">Party night!</a>
+								<span style="font-size:15px">by <a href="#">Australiasian Association</a></span></h3>
+								<p>$20. 15th July 2015. 3:00am<span class="addtocalendar atc-style-icon atc-style-menu-wb"><a class="atcb-link"><i style="font-size:1.5em;margin-left:10px" class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>
+								<var class="atc_event">
+								<var class="atc_date_start">2014-05-04 12:00:00</var>
+								<var class="atc_date_end">2014-05-04 18:00:00</var>
+								<var class="atc_timezone">Europe/London</var>
+								<var class="atc_title">Star Wars Day Party</var>
+								<var class="atc_description">May the force be with you</var>
+								<var class="atc_location">Tatooine</var>
+								<var class="atc_organizer">Luke Skywalker</var>
+								<var class="atc_organizer_email">luke@starwars.com</var>
+							</var></span></p>
+						</div>
+					</li>
+					<li class="club-list-item">
+						<div class="club-thumb">
+							<div class="profile-image">
+								<img src="./images/sample_dp.jpg">
+							</div>
+						</div>
+						<div class="title">
+							<h3>
+							<a href="#">Party night!</a>
+							<span style="font-size:15px">by <a href="#">Australiasian Association</a></span></h3>
+							<p>$20. 18th July 2015. 8:00am
+								<span class="addtocalendar atc-style-icon atc-style-menu-wb"><a class="atcb-link"><i style="font-size:1.5em;margin-left:10px" class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>
+								<var class="atc_event">
+								<var class="atc_date_start">2014-05-04 12:00:00</var>
+								<var class="atc_date_end">2014-05-04 18:00:00</var>
+								<var class="atc_timezone">Europe/London</var>
+								<var class="atc_title">Star Wars Day Party</var>
+								<var class="atc_description">May the force be with you</var>
+								<var class="atc_location">Tatooine</var>
+								<var class="atc_organizer">Luke Skywalker</var>
+								<var class="atc_organizer_email">luke@starwars.com</var>
+							</var></span></p>
+						</div>
+					</li>
+					<li class="club-list-item">
+						<div class="club-thumb">
+							<div class="profile-image">
+								<img src="./images/sample_dp.jpg">
+							</div>
+						</div>
+						<div class="title">
+							<h3>
+							<a href="#">Party night!</a>
+							<span style="font-size:15px">by <a href="#">Australiasian Association</a></span></h3>
+							<p>$20. 20th July 2015. 4:00pm<span class="addtocalendar atc-style-icon atc-style-menu-wb"><a class="atcb-link"><i style="font-size:1.5em;margin-left:10px" class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>
+							<var class="atc_event">
+							<var class="atc_date_start">2014-05-04 12:00:00</var>
+							<var class="atc_date_end">2014-05-04 18:00:00</var>
+							<var class="atc_timezone">Europe/London</var>
+							<var class="atc_title">Star Wars Day Party</var>
+							<var class="atc_description">May the force be with you</var>
+							<var class="atc_location">Tatooine</var>
+							<var class="atc_organizer">Luke Skywalker</var>
+							<var class="atc_organizer_email">luke@starwars.com</var>
+						</var></span></p>
+					</div>
+				</li>
+			</ul>
+		</ul>
+	</div>
+	<div class="uk-width-4-5">
+		<div class="loader detail" style="display:none;width: 100%; height: 100%;position:fixed;background-color:rgba(69,210,252,0.6);background-opacity:0.3">
+			<a style="" href="#" class="load-more load-more--loading">Load more</a>
+		</div>
+		<div id="content-container" class="uk-container uk-container-center">
+			<div class="uk-width-1-1 uk-cover-background" style="background-image: url('images/sample_cover.jpg'); height: 40vh; min-height: 300px;">
+			</div>
+			<div id="summary-box" class="uk-block uk-block-primary uk-contrast">
+				<div class="uk-grid">
+					<div class="uk-width-1-4 uk-width-medium-1-4"><div class="uk-panel uk-panel-header uk-width-1-1">
+						<h3 class="uk-panel-title">Event Name</h3>
+						<div class="uk-hidden-small">This is where a brief description would go. Will be hidden on small screens</div>
+					</div></div>
+					<div class="uk-width-1-4 uk-width-medium-1-4"><div class="uk-panel uk-panel-header uk-width-1-1">
+						<h3 class="uk-panel-title">Details</h3>
+						<table class="uk-table" id="contact-table">
+							<tbody>
+								<tr><td>Date:</td><td>16/04/2016</td></tr>
+								<tr><td>Start:</td><td>7:00pm</td></tr>
+								<tr><td>Duration:</td><td>2 hours</td></tr>
+								<tr><td>Location:</td><td>EH1</td></tr>
+								<tr><td>Hosted by:</td><td><strong><a href="#">FMAA</a></strong></td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="uk-width-1-4 uk-width-medium-1-4">
+					<div class="uk-panel uk-panel-header uk-width-1-1">
+						<h3 class="uk-panel-title">Connect</h3>
+						<button class="uk-button uk-button-success uk-width-1-1 uk-button-large button-join" type="button">Buy Tickets $20.00</button>
+						<button class="uk-button uk-button-success uk-width-1-1 uk-button-large uk-margin-top" type="button" onclick="this.firstChild.click()"><a href="view_club.html">View Club</a></button>
+					</div>
+				</div>
+				<div class="uk-width-1-4 uk-width-medium-1-4">
+					<div class="uk-panel uk-panel-header uk-width-1-1">
+						<h3 class="uk-panel-title">QR</h3>
+						<img style="width:150px;height:150px" src="./images/sample_qr.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="uk-block uk-block-muted">
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="./vendor/uikit/js/uikit.min.js"></script>
+<script type="text/javascript" src="./vendor/uikit/js/components/sticky.min.js"></script>
+<script type="text/javascript">(function () {
+if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+var h = d[g]('body')[0];h.appendChild(s); }})();
+</script>
+<script type="text/javascript">
+	// handling search box in view
+			$('#Search-box').focus(function(){
+				$('#dropdown-search').add($('#Search-box')).addClass('open');
+			});
+			$('#Search-box').focusout(function() {
+				$('#dropdown-search').add($('#Search-box')).removeClass('open');
+			});
+			// handling search box in nav
+			$('#search-nav').focus(function(){
+				$('#dropdown-nav').add($('#search-nav')).addClass('open');
+			});
+			$('#search-nav').blur(function() {
+				$('#dropdown-nav').add($('#search-nav')).removeClass('open');
+			});
+</script>
+</body>
+</html>

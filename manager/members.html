@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>All Members from FMAA</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../vendor/uikit/css/uikit.min.css">
+		<link rel="stylesheet" type="text/css" href="../vendor/uikit/css/uikit.custom.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<div class="uk-offcanvas" id="navMenu">
+			<div class="uk-offcanvas-bar">
+				<ul class="uk-nav uk-nav-offcanvas">
+					<form class="uk-search"><input class="uk-search-field" id="search-nav" type="search" placeholder="Search"></form>
+					<!-- DEMO SEARCH DATA-->
+					<ul class="uk-list-line dropdown-menu" id="dropdown-nav">
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Clubs</h3>
+							<li><a href="#">THIS LIST WILL SHOW CLUBS!</a></li>
+							<li><a href="#">FMAA</a></li>
+							<li><a href="#">Whatever the shit is</a></li>
+							<li><a href="#">What a hell </a></li>
+							<li><a href="#">This is just great</a></li>
+							<li><a href="#">No worries</a></li>
+						</div>
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Events</h3>
+							<li><a href="#">THIS LIST WILL SHOW EVENTS!</a></li>
+							<li><a href="#">FMAA Networking Night</a></li>
+							<li><a href="#">Whatever the shit is</a></li>
+							<li><a href="#">What a hell </a></li>
+							<li><a href="#">This is just great</a></li>
+							<li><a href="#">No worries</a></li>
+						</div>
+					</ul>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; All Events</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; All Clubs</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; Settings</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="uk-offcanvas" id="userMenu">
+			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+				<ul class="uk-nav uk-nav-offcanvas">
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-qrcode"></i>&nbsp; My QR</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; My Upcoming Events</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; My Clubs</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-user"></i>&nbsp; Account</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-sign-out"></i>&nbsp; Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<header class="uk-navbar uk-text-contrast" style="border-radius: initial;" data-uk-sticky>
+			<ul class="uk-navbar-nav">
+				<li><a onclick="UIkit.offcanvas.show('#navMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-navicon"></i></a></li>
+			</ul>
+			<div class="uk-navbar-flip">
+				<ul class="uk-navbar-nav">
+					<li><a onclick="UIkit.offcanvas.show('#userMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-user"></i></a></li>
+				</ul>
+			</div>
+			<div class="uk-navbar-content uk-navbar-center uk-text-bold">
+				Welcome to FMAA - Jackie (Marketing manager)
+			</div>
+		</header>
+		<div class="uk-grid" style="margin-top:20px;" style="max-width:1000px">
+			<div class="uk-container uk-container-center" >
+				<div class="uk-panel uk-panel-box uk-panel-box-secondary">
+					<div class="uk-panel-header">
+						<form class="uk-search">
+						<input class="uk-search-field" id="search-nav" type="search" placeholder="Search">
+						</form>
+					</div>
+					<div class="uk-panel-body">
+						<ul class="uk-list uk-list-line">
+							<li>
+								<div class="uk-grid uk-grid-small">
+									<div class="uk-width-3-10">
+										<div class="avatar">
+											<img src="../images/sample_dp.jpg" />
+										</div>
+									</div>
+									<div class="uk-width-5-10">
+										<div class="content">
+											<h4>
+											<a href="#">Aadish</a>
+											<a id="clickable">
+												<i class="fa fa-cog" aria-hidden="true"></i>
+											</a>
+											<!-- DEMO SEARCH DATA-->
+											<div class="uk-list-line dropdown-menu" id="dropdown-cell">
+												<div align="right" id="close">
+													<i class="fa fa-times" aria-hidden="true"></i>
+												</div>
+												<li><a href="#">Set paid</a></li>
+											</div>
+											</h4>
+											Joined at: 28th July 2016. 14:28pm
+										</div>
+										
+									</div>
+									<div class="uk-width-2-10">
+										<div class="action">
+											<div class="uk-badge uk-badge-success">Member</div>
+											
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="uk-grid uk-grid-small cell">
+									<div class="uk-width-3-10">
+										<div class="avatar">
+											<img src="../images/sample_dp.jpg" />
+										</div>
+									</div>
+									<div class="uk-width-5-10">
+										<div class="content">
+											<h4>
+											<a href="#">Aaron</a>
+											<a id="clickable">
+												<i class="fa fa-cog" aria-hidden="true"></i>
+											</a>
+											<!-- DEMO SEARCH DATA-->
+											<div class="uk-list-line dropdown-menu" id="dropdown-cell">
+												<div align="right" id="close">
+													<i class="fa fa-times" aria-hidden="true"></i>
+												</div>
+												<li><a href="#">Set paid</a></li>
+											</div>
+											</h4>
+											Joined at: 28th July 2016. 14:28pm
+											
+										</div>
+										
+									</div>
+									<div class="uk-width-2-10">
+										<div class="action">
+											<div class="uk-badge uk-badge-success">Member</div>
+											<div class="uk-badge uk-badge-danger uk-badge-following">Pay at spot</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="loader">
+								<a href="#" class="load-more load-more--loading">Load more</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../vendor/uikit/js/uikit.min.js"></script>
+		<script type="text/javascript" src="../vendor/uikit/js/components/sticky.min.js"></script>
+		<script type="text/javascript" src="../vendor/uikit/js/components/autocomplete.min.js"></script>
+		<script type="text/javascript" src="../vendor/uikit/js/components/datepicker.min.js"></script>
+		<script type="text/javascript" src="../vendor/uikit/js/components/timepicker.min.js"></script>
+		<script type="text/javascript">
+			// handling search box in nav
+			$('#search-nav').focus(function(){
+				$('#dropdown-nav').add($('#search-nav')).addClass('open');
+			});
+			$('#search-nav').blur(function() {
+				$('#dropdown-nav').add($('#search-nav')).removeClass('open');
+			});
+			$('#clickable').click(function(){
+				$('#dropdown-cell').add($('#clickable')).addClass('open');
+			});
+			$('#close').click(function(){
+				$('#dropdown-cell').add($('#clickable')).removeClass('open');
+			});
+			
+		</script>
+	</body>
+</html>
