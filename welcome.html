@@ -6,11 +6,12 @@
 		<link rel="stylesheet" type="text/css" href="./vendor/uikit/css/uikit.min.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/customize-page.css">
 	</head>
 	<body>
 		<div class="uk-grid" id="welcome" style="margin-top:20px">
 			<div class="uk-container-center" style="text-align:center;color: white;text-decoration: none;
-  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);">
+				text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);">
 				<h1 style="color:white">Welcome to MyUpass!</h1>
 				<h3 style="color:white">Your digitalised passbook to all your clubs!</h3>
 			</div>
@@ -19,7 +20,7 @@
 					<div class="form-toggle"></div>
 					<div class="form-panel one">
 						<div class="form-header">
-							<h1>Login to your pass!</h1>
+							<h1>Login!</h1>
 						</div>
 						<div class="form-content">
 							<form>
@@ -36,6 +37,8 @@
 										<input type="checkbox"/>Remember Me
 										</label><a href="#" class="form-recovery">Forgot Password?</a>
 									</div>
+									<div class="uk-alert uk-alert-danger" data-uk-alert>
+									<a href="" class="uk-alert-close uk-close"></a>Wrong password</div>
 									<div class="form-group">
 										<button type="submit">Log In</button>
 									</div>
@@ -82,13 +85,9 @@
 				<a href="#">&copy; 2016 MyUpass</a>|
 				<a href="#">Explore</a>|
 				<a href="#">Careers</a>|
-				<a href="#">Apps</a>
+				<a href="#">Mobile Apps</a>
 			</div>
-
 			<script type="text/javascript" src="vendor/uikit/js/uikit.min.js"></script>
-			<script type="text/javascript" src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 			<script type="text/javascript" src="js/welcome.js"></script>
-
-			<script id="__bs_script__">//<![CDATA[document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.12.8.js'><\/script>".replace("HOST", location.hostname));//]]></script>
 		</body>
 	</html>

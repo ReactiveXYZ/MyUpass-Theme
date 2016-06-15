@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html  class="welcome">
+	<head>
+		<title>To help you get started...</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/customize-page.css">
+		<link rel="stylesheet" type="text/css" href="./vendor/uikit/css/uikit.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	</head>
+	<body>
+		<h1 style="text-align:center" class="uk-contrast"> My Guide</h1>
+		<!-- multistep form -->
+		<form id="msform">
+			<!-- progressbar -->
+			<ul id="progressbar" class="guide">
+				<li class="active">Get Started</li>
+				<li>More insights</li>
+				<li>Suggestions</li>
+			</ul>
+			<!-- fieldsets -->
+			<fieldset>
+				<h1>Congratulations!</h1>
+				<h2 class="fs-title">You are about to embark on something great!</h2>
+				<h2 class="fs-title">Let's get you started</h2>
+				<input type="button" name="next" class="next action-button" value="Go!" />
+			</fieldset>
+			<fieldset class="uk-form uk-form-stacked">
+				<h2 class="fs-title">Clubs want to know a bit more about you...</h2>
+				<h3 class="fs-subtitle">Nothing offensive here :)</h3>
+				
+				<div class="uk-form-row">
+					<label class="uk-form-label">Hey! What's your name?</label>
+					<input type="text" name="name" placeholder="First Name Last Name">
+				</div>
+				<div class="uk-form-row">
+					<label class="uk-form-label">
+						Upload a cool avatar that represents you!
+					</label>
+					<div id="upload-drop" class="uk-placeholder">
+									Drop your image here or <a class="uk-form-file">Select a file<input id="upload-select" type="file"></a>
+								</div>
+				</div>
+				<div class="uk-form-row">
+					<label class="uk-form-label">University</label>
+					<select>
+						<option>Melbourne</option>
+						<option>Monash</option>
+						<option>Others</option>
+					</select>
+				</div>
+				<div class="uk-form-row">
+					<label class="uk-form-label">Faculty</label>
+					<select>
+						<option>A</option>
+						<option>List</option>
+						<option>Of</option>
+						<option>Faculties</option>
+					</select>
+				</div>
+				
+				<div class="uk-form-row">
+					<label class="uk-form-label">Sex</label>
+					<select>
+						<option>Male</option>
+						<option>Female</option>
+						<option>Others</option>
+					</select>
+				</div>
+				<div class="uk-form-row">
+					<label class="uk-form-label">Some contact details</label>
+					<input type="text" name="phone" placeholder="Phone number" />
+				</div>
+				<div class="uk-form-row">
+					<label class="uk-form-label">What kinds of activties do you like? (Ctrl/Cmd for multi-select)</label>
+					<select multiple>
+						<option>Party</option>
+						<option>Party</option>
+						<option>Party</option>
+						<option>Party</option>
+						<option>Party</option>
+						<option>Party</option>
+						<option>Party</option>
+					</select>
+				</div>
+				
+				<input type="button" name="previous" class="previous action-button" value="Previous" />
+				<input type="button" name="next" class="next action-button" value="Next" />
+			</fieldset>
+			<fieldset>
+				<h2 class="fs-title">Fantastic! We've got a few suggestions for you!</h2>
+				
+				<div class="uk-container uk-container-center">
+					<div class="uk-block uk-block-primary uk-contrast">
+						<h3>Clubs</h3>
+						<div class="uk-container">
+							<div class="uk-grid">
+								<div class="uk-width-medium-1-3">
+									<figure class="uk-overlay">
+										<img src="./images/sample_dp.jpg" width="600" height="400" alt="">
+										<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-bottom">
+										<div>
+											<h3>FMAA</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.[<a href="#">Read more...</a>]</p>
+										</div>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="uk-width-medium-1-3">
+									<figure class="uk-overlay">
+										<img src="./images/sample_dp.jpg" width="600" height="400" alt="">
+										<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-bottom">
+										<div>
+											<h3>FMAA</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.[<a href="#">Read more...</a>]</p>
+										</div>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="uk-width-medium-1-3">
+									<figure class="uk-overlay">
+										<img src="./images/sample_dp.jpg" width="600" height="400" alt="">
+										<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-bottom">
+										<div><h3>FMAA</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.[<a href="#">Read more...</a>]</p>
+											</div>
+										</figcaption>
+										</figure>
+
+									</div>
+								<div class="uk-width-medium-1-3 uk-grid-margin">
+										<figure class="uk-overlay">
+											<img src="./images/sample_dp.jpg" width="600" height="400" alt="">
+											<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-bottom">
+											<div><h3>FMAA</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.[<a href="#">Read more...</a>]</p>
+											</div>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="uk-width-medium-1-3 uk-grid-margin">
+										<figure class="uk-overlay">
+											<img src="./images/sample_dp.jpg" width="600" height="400" alt="">
+											<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-bottom">
+											<div><h3>FMAA</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.[<a href="#">Read more...</a>]</p>
+											</div>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="uk-width-medium-1-3 uk-grid-margin">
+										<figure class="uk-overlay">
+											<img src="./images/sample_dp.jpg" width="600" height="400" alt="">
+											<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-bottom">
+											<div><h3>FMAA</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.[<a href="#">Read more...</a>]</p>
+											</div>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+						</div>
+						<h3>Events</h3>
+						<div class="uk-container">
+								<div class="uk-grid">
+									<div class="uk-width-medium-1-2">
+										<figure class="uk-overlay">
+											<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+											<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<div>
+												<h3>Networking night</h3>
+												<p>By <a href="#">FMAA</a></p>
+											</div>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="uk-width-medium-1-2">
+										<figure class="uk-overlay">
+											<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+											<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<div>
+												<h3>Networking night</h3>
+												<p>By <a href="#">FMAA</a></p>
+											</div>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="uk-width-medium-1-2 uk-grid-margin">
+										<figure class="uk-overlay">
+											<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+											<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<div>
+												<h3>Networking night</h3>
+												<p>By <a href="#">FMAA</a></p>
+											</div>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="uk-width-medium-1-2 uk-grid-margin">
+										<figure class="uk-overlay">
+											<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+											<figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<div>
+												<h3>Networking night</h3>
+												<p>By <a href="#">FMAA</a></p>
+											</div>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+						</div>
+					</div>
+					<p>Later. You can always find more of your like by <b>searching</b></p>
+				</div>
+				<input type="button" name="previous" class="previous action-button" value="Previous" />
+				<input type="submit" name="submit" class="submit action-button" value="Explore!" />
+			</fieldset>
+			</form>
+			<script type="text/javascript" src="vendor/uikit/js/uikit.min.js"></script>
+			<script type="text/javascript" src="./js/customize-page.js"></script>
+		</body>
+	</html>

@@ -12,11 +12,31 @@
 		<div class="uk-offcanvas" id="navMenu">
 			<div class="uk-offcanvas-bar">
 				<ul class="uk-nav uk-nav-offcanvas">
-					<form class="uk-search"><input class="uk-search-field" type="search" placeholder="Search"></form>
+					<form class="uk-search"><input id="search-nav" class="uk-search-field" type="search" placeholder="Search"></form>
+					<!-- DEMO SEARCH DATA-->
+					<ul class="uk-list-line dropdown-menu" id="dropdown-nav">
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Clubs</h3>
+							<li><a href="#">THIS LIST WILL SHOW CLUBS!</a></li>
+							<li><a href="#">FMAA</a></li>
+							<li><a href="#">Whatever the shit is</a></li>
+							<li><a href="#">What a hell </a></li>
+							<li><a href="#">This is just great</a></li>
+							<li><a href="#">No worries</a></li>
+						</div>
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Events</h3>
+							<li><a href="#">THIS LIST WILL SHOW EVENTS!</a></li>
+							<li><a href="#">FMAA Networking Night</a></li>
+							<li><a href="#">Whatever the shit is</a></li>
+							<li><a href="#">What a hell </a></li>
+							<li><a href="#">This is just great</a></li>
+							<li><a href="#">No worries</a></li>
+						</div>
+					</ul>
 					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; All Events</a></li>
 					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; All Clubs</a></li>
 					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; Settings</a></li>
-
 					<div style="bottom:0;position:absolute;width:100%">
 						<p style="text-align:center; color:white">&copy 2016 MyUpass</p>
 					</div>
@@ -27,26 +47,29 @@
 			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
 				<ul class="uk-nav uk-nav-offcanvas" >
 					<li class="uk-nav-header">About me</li>
-					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-qrcode"></i>&nbsp; My QR</a></li>
+					<li><a href="./images/sample_qr.jpg" data-uk-lightbox title="My QR ID"><i class="uk-icon uk-icon-justify uk-icon-qrcode"></i>&nbsp; My QR</a></li>
 					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; My Upcoming Events</a></li>
 					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; My Clubs</a></li>
 					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-user"></i>&nbsp; Account</a></li>
-
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-sign-out"></i>&nbsp; Log Out</a></li>
 					<li class="uk-nav-header">Manage my clubs</li>
 					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; FMAA</a></li>
 					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; AIESEC</a></li>
-
-					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-sign-out"></i>&nbsp; Log Out</a></li>
 				</ul>
 			</div>
 		</div>
 		<header class="uk-navbar uk-text-contrast" style="border-radius: initial;" data-uk-sticky>
 			<ul class="uk-navbar-nav">
-				<li><a onclick="UIkit.offcanvas.show('#navMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-navicon"></i></a></li>
+				<li>
+				<a onclick="UIkit.offcanvas.show('#navMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-navicon"></i></a></li>
 			</ul>
 			<div class="uk-navbar-flip">
 				<ul class="uk-navbar-nav">
-					<li><a onclick="UIkit.offcanvas.show('#userMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-user"></i></a></li>
+					<li>
+					<a id="userProfile" onclick="UIkit.offcanvas.show('#userMenu');">
+						<img src="./images/sample_dp.jpg">
+					</a>
+					</li>
 				</ul>
 			</div>
 			<div class="uk-navbar-content uk-navbar-center uk-text-bold">
@@ -196,20 +219,19 @@
 									</div>
 									<div class="content">
 										<div class="title">
-											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#"><strong>Party night</strong></a> By
 											<a href="#">FMAA </a>
 										</div>
 										<div class="detail">
 											<div style="display:inline">
 												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
-												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+												| <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
 											</div>
 										</div>
 										<div class="brief">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
 										</div>
 									</div>
-
 								</div>
 							</li>
 							<li>
@@ -220,20 +242,19 @@
 									</div>
 									<div class="content">
 										<div class="title">
-											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#"><strong>Party night</strong></a> By
 											<a href="#">FMAA </a>
 										</div>
 										<div class="detail">
 											<div style="display:inline">
 												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
-												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+												| <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
 											</div>
 										</div>
 										<div class="brief">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
 										</div>
 									</div>
-
 								</div>
 							</li>
 							<li>
@@ -244,20 +265,19 @@
 									</div>
 									<div class="content">
 										<div class="title">
-											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#"><strong>Party night</strong></a> By
 											<a href="#">FMAA </a>
 										</div>
 										<div class="detail">
 											<div style="display:inline">
 												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
-												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+												| <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
 											</div>
 										</div>
 										<div class="brief">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
 										</div>
 									</div>
-
 								</div>
 							</li>
 							<li>
@@ -268,20 +288,19 @@
 									</div>
 									<div class="content">
 										<div class="title">
-											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#"><strong>Party night</strong></a> By
 											<a href="#">FMAA </a>
 										</div>
 										<div class="detail">
 											<div style="display:inline">
 												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
-												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+												| <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
 											</div>
 										</div>
 										<div class="brief">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
 										</div>
 									</div>
-
 								</div>
 							</li>
 							<li>
@@ -292,20 +311,19 @@
 									</div>
 									<div class="content">
 										<div class="title">
-											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#"><strong>Party night</strong></a> By
 											<a href="#">FMAA </a>
 										</div>
 										<div class="detail">
 											<div style="display:inline">
 												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
-												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+												| <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
 											</div>
 										</div>
 										<div class="brief">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
 										</div>
 									</div>
-
 								</div>
 							</li>
 							<li>
@@ -316,20 +334,19 @@
 									</div>
 									<div class="content">
 										<div class="title">
-											<a href="#"><strong>Party night</strong></a> By 
+											<a href="#"><strong>Party night</strong></a> By
 											<a href="#">FMAA </a>
 										</div>
 										<div class="detail">
 											<div style="display:inline">
 												<p><i class="fa fa-usd" aria-hidden="true"></i> 40
-												 | <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
+												| <i class="fa fa-calendar" aria-hidden="true"></i> July 28th 2016</p>
 											</div>
 										</div>
 										<div class="brief">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lacus nisi. Integer tristique convallis condimentum. Aliquam nec laoreet tellus. Cras tincidunt porta semper. Nunc pulvinar molestie lacus ac facilisis. Maecenas bibendum turpis leo, vitae interdum tellus dictum vitae. Vestibulum tellus nulla, sodales vel maximus</p>
 										</div>
 									</div>
-
 								</div>
 							</li>
 							
@@ -341,8 +358,23 @@
 				</div>
 			</div>
 		</div>
-		
-		
 		<script type="text/javascript" src="./vendor/uikit/js/uikit.min.js"></script>
+		<script type="text/javascript" src="./vendor/uikit/js/components/lightbox.min.js"></script>
+		<script type="text/javascript">
+			// handling search box in view
+			$('#Search-box').focus(function(){
+				$('#dropdown-search').add($('#Search-box')).addClass('open');
+			});
+			$('#Search-box').focusout(function() {
+				$('#dropdown-search').add($('#Search-box')).removeClass('open');
+			});
+			// handling search box in nav
+			$('#search-nav').focus(function(){
+				$('#dropdown-nav').add($('#search-nav')).addClass('open');
+			});
+			$('#search-nav').blur(function() {
+				$('#dropdown-nav').add($('#search-nav')).removeClass('open');
+			});
+		</script>
 	</body>
 </html>

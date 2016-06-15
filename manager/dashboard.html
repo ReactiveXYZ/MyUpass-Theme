@@ -68,7 +68,7 @@
 		<div class="grid" >
 			<div class="grid-item">
 				<div class="uk-panel-box uk-panel-box-primary grid-item-limited">
-					<h3 class="uk-panel-title"> Recent members <i style="float:right" class="fa fa-question-circle" aria-hidden="true"></i></h3>
+					<h3 class="uk-panel-title"> Recent <a href="#">members</a> <i style="float:right" class="fa fa-question-circle" aria-hidden="true"></i></h3>
 					<div class="uk-panel-body">
 						<ul class="uk-list uk-list-line uk-list-space ">
 							<li>
@@ -137,7 +137,7 @@
 			</div>
 			<div class="grid-item">
 				<div class="uk-panel-box uk-panel-box-primary">
-					<h3 class="uk-panel-title"> Recent events <i style="float:right" class="fa fa-question-circle" aria-hidden="true"></i></h3>
+					<h3 class="uk-panel-title"> Recent <a href="#">events</a> <i style="float:right" class="fa fa-question-circle" aria-hidden="true"></i></h3>
 					<div class="uk-panel-body">
 						<ul class="uk-list uk-list-line ">
 							<li>
@@ -293,7 +293,56 @@
 							<a href="#">More to come... Stay tuned!</a>
 						</div>	
 					</div>
+				</div>
+			</div>
 
+			<div class="grid-item">
+				<div class="uk-panel-box uk-panel-box-primary">
+					<h3 class="uk-panel-title"> Role manager
+					</h3>
+					<div class="uk-panel-body">
+						<ul class="uk-list uk-list-line">
+							<li>
+								<div class="role-item">
+									<span class="uk-disabled"><a href="">Admin</a></span>
+									<span class="uk-badge uk-badge-danger role-action">Unchangable!</span>
+								</div>								
+							</li>
+							<li>
+								<div class="role-item">
+									<span class="uk-disabled"><a href="">Member</a></span>
+									<span class="uk-badge uk-badge-danger role-action">Unchangable!</span>
+								</div>
+							</li>
+							<li>
+								<div class="role-item">
+									<span class="uk-disabled"><a data-uk-modal="{target:'#member-with-roles'}">Subscriber</a></span>
+									<span class="uk-badge uk-badge-danger role-action">Unchangable!</span>
+								</div>
+							</li>
+							<li>
+								<div class="role-item">
+									<span class="uk-disabled"><a href="">Swag</a></span>
+									<button class="uk-button uk-button-mini uk-button-primary role-action">Edit</button>
+								</div>
+							</li>
+							<li><div class="role-item">
+									<span class="uk-disabled"><a href="">Contributor</a></span>
+									<button class="uk-button uk-button-mini uk-button-primary role-action">Edit</button>
+								</div>
+							</li>
+							<li>
+								<div class="role-item">
+									<span class="uk-disabled"><a href="">Marketing manager</a></span>
+									<button class="uk-button uk-button-mini uk-button-primary role-action">Edit</button>
+								</div>
+							</li>
+							
+						</ul>
+						<div class="uk-container-center">
+							<button class="uk-button uk-button-primary" data-uk-modal="{target:'#create-role'}">Create a new role</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -304,6 +353,74 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam nibh, ac viverra turpis. Aliquam ac feugiat sapien. Curabitur dignissim vel diam nec luctus. Sed vel suscipit mi, ultrices auctor metus. Pellentesque tellus nulla, tincidunt in nisi non, scelerisque cursus nisl. Curabitur vitae lorem nec diam iaculis rutrum vulputate sed purus.
 			</div>
 		</div>
+
+		<div id="create-role" class="uk-modal">
+			<div class="uk-modal-dialog">
+			<a class="uk-modal-close uk-close"></a>
+				<div class="uk-modal-header">
+					<h2>Create a new role</h2>
+				</div>
+				<div class="uk-modal-body">
+					<form class="uk-form uk-form-stacked">
+						<div class="uk-form-row">
+							<label class="uk-form-label">
+								Role name:
+							</label>
+							<input type="text" name="">
+						</div>
+
+						<div class="uk-form-row">
+							<label class="uk-form-label">
+								Capabilities:
+							</label>
+							<label><input type="checkbox" name=""> View event detail</label> <br>
+							<label><input type="checkbox" name=""> Post event</label><br>
+							<label><input type="checkbox" name=""> Edit event</label><br>
+							<label><input type="checkbox" name=""> Delete event</label><br>
+							<label><input type="checkbox" name=""> Post a news/message</label><br>
+							<label><input type="checkbox" name=""> View member detail</label><br>
+							<label><input type="checkbox" name=""> Edit member detail</label><br>
+							<label><input type="checkbox" name=""> Edit club info</label><br>
+							<label><input type="checkbox" name=""> Edit club payment method</label><br>
+							<label><input type="checkbox" name=""> Edit club's communication messages</label><br>
+							<label><input type="checkbox" name=""> Manage club roles</label><br>
+							<label><input type="checkbox" name=""> Receive club updates</label><br>
+							<label><input type="checkbox" name=""> Authenticate members</label><br>
+						</div>
+					</form>
+				</div>
+				<div class="uk-modal-footer">
+					<button class="uk-button uk-button-primary">Submit</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="uk-modal" id="member-with-roles">
+			<div class="uk-modal-dialog">
+				<a class="uk-modal-close uk-close"></a>
+
+				<div class="uk-modal-header">
+					<h2>Subscribers</h2>
+				</div>
+				<div class="uk-modal-body">
+
+					<form class="uk-search" data-uk-search>
+						<input type="text" name="" class="uk-search-field" placeholder="Search...">
+					</form>
+					<ul class="uk-list uk-list-line">
+						<li><a href="#">Jackie</a></li>
+						<li><a href="#">Jackson</a></li>
+						<li><a href="#">Echo</a></li>
+						<li><a href="#">Ego</a></li>
+						<li class="loader">
+							<a href="#" class="load-more load-more--loading">Load more</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
 		<script type="text/javascript" src="../vendor/uikit/js/uikit.min.js"></script>
 		<script type="text/javascript" src="../vendor/uikit/js/components/sticky.min.js"></script>
 		<script type="text/javascript" src="../vendor/uikit/js/components/autocomplete.min.js"></script>

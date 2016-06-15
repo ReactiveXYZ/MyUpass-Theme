@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Clubs</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./vendor/uikit/css/uikit.min.css">
+		<link rel="stylesheet" type="text/css" href="./vendor/uikit/css/uikit.custom.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="uk-offcanvas" id="navMenu">
+			<div class="uk-offcanvas-bar">
+				<ul class="uk-nav uk-nav-offcanvas">
+					<form class="uk-search"><input id="search-nav" class="uk-search-field" type="search" placeholder="Search"></form>
+					<!-- DEMO SEARCH DATA-->
+					<ul class="uk-list-line dropdown-menu" id="dropdown-nav">
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Clubs</h3>
+							<li><a href="#">THIS LIST WILL SHOW CLUBS!</a></li>
+							<li><a href="#">FMAA</a></li>
+							<li><a href="#">Whatever the shit is</a></li>
+							<li><a href="#">What a hell </a></li>
+							<li><a href="#">This is just great</a></li>
+							<li><a href="#">No worries</a></li>
+						</div>
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Events</h3>
+							<li><a href="#">THIS LIST WILL SHOW EVENTS!</a></li>
+							<li><a href="#">FMAA Networking Night</a></li>
+							<li><a href="#">Whatever the shit is</a></li>
+							<li><a href="#">What a hell </a></li>
+							<li><a href="#">This is just great</a></li>
+							<li><a href="#">No worries</a></li>
+						</div>
+					</ul>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; All Events</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; All Clubs</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; Settings</a></li>
+					<div style="bottom:0;position:absolute;width:100%">
+						<p style="text-align:center; color:white">&copy 2016 MyUpass</p>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div class="uk-offcanvas" id="userMenu">
+			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+				<ul class="uk-nav uk-nav-offcanvas" >
+					<li class="uk-nav-header">About me</li>
+					<li><a href="./images/sample_qr.jpg" data-uk-lightbox title="My QR ID"><i class="uk-icon uk-icon-justify uk-icon-qrcode"></i>&nbsp; My QR</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-calendar"></i>&nbsp; My Upcoming Events</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-group"></i>&nbsp; My Clubs</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-user"></i>&nbsp; Account</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-sign-out"></i>&nbsp; Log Out</a></li>
+					<li class="uk-nav-header">Manage my clubs</li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; FMAA</a></li>
+					<li><a href=""><i class="uk-icon uk-icon-justify uk-icon-cog"></i>&nbsp; AIESEC</a></li>
+				</ul>
+			</div>
+		</div>
+		<header class="uk-navbar uk-text-contrast" style="border-radius: initial;" data-uk-sticky>
+			<ul class="uk-navbar-nav">
+				<li><a onclick="UIkit.offcanvas.show('#navMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-navicon"></i></a></li>
+			</ul>
+			<div class="uk-navbar-flip">
+				<ul class="uk-navbar-nav">
+					<li><a onclick="UIkit.offcanvas.show('#userMenu');"><i class="uk-icon uk-icon-justify uk-icon-small uk-icon-user"></i></a></li>
+				</ul>
+			</div>
+			<div class="uk-navbar-content uk-navbar-center uk-text-bold">
+				MyUpass
+			</div>
+		</header>
+		<header class="page-header">
+			<h1 style="line-height:300px">My Clubs</h1>
+		</header>
+		<div class="uk-block uk-block-default">
+			<h3 style="text-align:center">You are in clubs below...</h3>
+			<div style="margin-top:20px;max-width:80%" class="uk-grid uk-container-center" data-uk-grid-margin>
+			<div class="uk-width-medium-1-3">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+					<figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-slide-top uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div>
+							<h3>AIESEC</h3>
+							<button class="uk-button uk-button-primary">
+								View club
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="uk-width-medium-1-3">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+					<figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-slide-top uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div>
+							<h3>CAINZ</h3>
+							<button class="uk-button uk-button-primary">
+								View club
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="uk-width-medium-1-3">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+					<figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-slide-top uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div>
+							<h3>SAMM</h3>
+							<button class="uk-button uk-button-primary">
+								View club
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="uk-width-medium-1-3">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+					<figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-slide-top uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div>
+							<h3>UNIT</h3>
+							<button class="uk-button uk-button-primary">
+								View club
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="loader" style="margin-bottom:20px">
+			<a style="" href="#" class="load-more load-more--loading">Load more</a>
+		</div>
+		<div class="uk-block uk-block-muted">
+			<h3 style="text-align:center">Wanna see more you like? We've got a few suggestions...</h3>
+			<div style="margin-top:20px;max-width:80%" class="uk-grid uk-container-center" data-uk-grid-margin>
+			
+			<div class="uk-width-medium-1-3">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+					<figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-slide-top uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div>
+							<h3>FMAA</h3>
+							<button class="uk-button uk-button-primary">
+								View club
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="uk-width-medium-1-3">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+					<figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-slide-top uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div>
+							<h3>FMAA</h3>
+							<button class="uk-button uk-button-primary">
+								View club
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="uk-width-medium-1-3">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img src="./images/sample_cover.jpg" width="600" height="400" alt="">
+					<figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-slide-top uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div>
+							<h3>FMAA</h3>
+							<button class="uk-button uk-button-primary">
+								View club
+							</button>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	
+		<script type="text/javascript" src="./vendor/uikit/js/uikit.min.js"></script>
+		<script type="text/javascript" src="./vendor/uikit/js/components/lightbox.min.js"></script>
+		<script type="text/javascript">
+		(function () {
+		if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+		if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+		var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+		s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+		s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+		var h = d[g]('body')[0];h.appendChild(s); }})();
+		</script>
+		<script type="text/javascript">
+			// handling search box in view
+			$('#Search-box').focus(function(){
+				$('#dropdown-search').add($('#Search-box')).addClass('open');
+			});
+			$('#Search-box').focusout(function() {
+				$('#dropdown-search').add($('#Search-box')).removeClass('open');
+			});
+			// handling search box in nav
+			$('#search-nav').focus(function(){
+				$('#dropdown-nav').add($('#search-nav')).addClass('open');
+			});
+			$('#search-nav').blur(function() {
+				$('#dropdown-nav').add($('#search-nav')).removeClass('open');
+			});
+		</script>
+		<script type="text/javascript">
+			(function($){
+			var $timeline_block = $('.cd-timeline-block');
+			//hide timeline blocks which are outside the viewport
+			$timeline_block.each(function(){
+				if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+					$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+				}
+			});
+			//on scolling, show/animate timeline blocks when enter the viewport
+			$(window).on('scroll', function(){
+				$timeline_block.each(function(){
+					if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+						$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+					}
+					});
+				});
+			})($);
+		</script>
+	</body>
+</html>
