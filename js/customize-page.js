@@ -14,7 +14,7 @@ $("#msform .next").click(function(){
 	//activate next step on progressbar using the index of next_fs
 	$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 	
-	//show the next fieldset
+	//show the next fieldseta
 	next_fs.show(); 
 	//hide the current fieldset with style
 	current_fs.animate({opacity: 0}, {
