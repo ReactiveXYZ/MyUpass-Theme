@@ -96,16 +96,16 @@
 										<label class="uk-form-label">
 											Name
 										</label>
-										<input type="text" name="" placeholder="Jackie">
+										<input type="text" name="" placeholder="Please Enter Your Name">
 									</div>
 									<div class="uk-form-row">
 										<label class="uk-form-label">
 											Gender
 										</label>
 										<select>
-											<option selected>Male</option>
+											<option value="" disabled selected>Select your Gender</option>
+											<option>Male</option>
 											<option>Female</option>
-											<option>Others</option>
 										</select>
 									</div>
 									<div class="uk-form-row">
@@ -123,25 +123,28 @@
 										<label class="uk-form-label">
 											Phone
 										</label>
-										<input type="text" name="" placeholder="04XXXXXXXX">
+										<input type="text" name="" placeholder="04XXXXXXXX" maxlength="10">
 									</div>
 									<div class="uk-form-row">
 										<label class="uk-form-label">
 											University
 										</label>
 										<select>
-											<option selected>Melbourne University</option>
+											<option value="" disabled selected>Select your University</option>
+											<option>Melbourne University</option>
 											<option>Monash University</option>
 											<option>RMIT University</option>
 											<option>Other</option>
 										</select>
+										
 									</div>
 									<div class="uk-form-row">
 										<label class="uk-form-label">
 											Faculty
 										</label>
 										<select>
-											<option selected>Science</option>
+											<option value="" disabled selected>Select your Faculty</option>
+											<option>Science</option>
 											<option>Medicine</option>
 											<option>Commerce</option>
 											<option>Architecture</option>
@@ -178,7 +181,8 @@
 												What's your best move?
 											</label>
 											<select class="uk-form-width-large">
-												<option selected>Sleep</option>
+												<option value="" disabled selected>Select your Best Move</option>
+												<option>Sleep</option>
 												<option>Eat</option>
 												<option>Drink</option>
 											</select>
@@ -219,7 +223,8 @@
 												What's your best move?
 											</label>
 											<select class="uk-form-width-large">
-												<option selected>Sleep</option>
+												<option value="" disabled selected>Select your Best Move</option>
+												<option>Sleep</option>
 												<option>Eat</option>
 												<option>Drink</option>
 											</select>
@@ -258,28 +263,28 @@
 									<label class="uk-form-label">
 										Card number
 									</label>
-									<input type="text" name="" placeholder="************1234">
+									<input type="text" name="" placeholder="************1234" maxlength="16">
 								</div>
 								<div class="uk-form-row">
 									<label class="uk-form-label">
 										CVC
 									</label>
-									<input type="text" name="" placeholder="Security code">
+									<input type="text" name="" placeholder="Security code" maxlength="3">
 								</div>
 								<div class="uk-form-row">
 									<label class="uk-form-label">
 										Expiration
 									</label>
 									<fieldset>
-										<input type="text" name="" placeholder="MM">
-										<input type="text" name="" placeholder="YYYY">
+										<input type="month">
+										
 									</fieldset>
 								</div>
 								<div class="uk-form-row">
 									<label class="uk-form-label">
 										Postal code
 									</label>
-									<input type="text" name="" placeholder="****">
+									<input type="text" name="" placeholder="1234" maxlength="4">
 								</div>
 								<div class="uk-form-row">
 									<button class="uk-button uk-button-primary">
@@ -297,7 +302,7 @@
 									<label class="uk-form-label">
 										Change Email
 									</label>
-									<input type="email" name="" placeholder="jackie@example.com">
+									<input type="email" name="" placeholder="MyUPass@example.com">
 								</div>
 								<div class="uk-form-row">
 									<label class="uk-form-label">
